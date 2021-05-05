@@ -12,7 +12,8 @@ const connect = function () {
   })
 
   conn.on('connect', () => {
-    console.log('Connection successful');
+    console.log('Connection successful');;
+    conn.write('Name: MK');
   })
 
   // interpret incoming data as text
